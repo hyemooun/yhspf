@@ -1,0 +1,212 @@
+/*//==========================web font=======================//*/
+@import url('https://fonts.cdnfonts.com/css/times-new-roman');
+font-family: 'Times New Roman', sans-serif;
+@font-face {
+    font-family: 'Gsans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*//=========================common==========================//*/
+* {margin: 0; padding: 0;}
+li { list-style: none;}
+a { text-decoration: none; color:#2a292e;}
+img { vertical-align: top;}
+
+/*//=========================reset==========================//*/
+html { overflow-x: hidden;  width: 100%; height: 100%;}
+body { font-family: 'Gsans'; color: #2a292e; width: 100%; height: 100%;}
+.wrap { position: relative;}
+.ul { content: ""; display: block; clear: both;}
+.blind { position: absolute; left:-9999px; font-size: 0px; width: 0; height: 0; overflow-x: hidden;}
+.blank { height:0; }
+
+
+/*-----------------------------------------------------------------------------*/
+/* 1. 헤더  */
+/*-----------------------------------------------------------------------------*/
+header { width: 100%; margin-top: 0px; position:fixed; z-index:1; display: flex; justify-content: space-between; }
+
+.home h1 { width: 150px; height: 130px; display: flex; justify-content: center; align-items: center; margin-left: 50px;}
+.home h1 > a { display: none; font-family: 'Times New Roman'; font-size: 64px; font-weight: 200; font-style: italic; line-height: 1;}
+.home h1:hover > a p { display: none;}
+.home h1 > a img { display: none;}
+.home h1:hover > a img { display: none;}
+
+/*.menu_btn { display: flex; justify-content: flex-end;}*/
+.menu_btn a { width: 150px; height: 130px; background: #809374; display: block; display: flex; justify-content: center; align-items: center; }
+.menu_btn a i { color:#fff; font-size: 70px;}
+
+/*-----------------------------------------------------------------------------*/
+/* 1-1. 풀스크린 메뉴 */
+/*-----------------------------------------------------------------------------*/
+
+.full_menu { display: none; background: #fff; width: 100%; height: 100%; position: absolute; top:0; left:0; z-index: 4;}
+
+.full_menu .close_btn { display: flex; justify-content: flex-end; }
+.full_menu .close_btn a { width: 150px; height: 130px; background: #fff; display: block; display: flex; justify-content: center; align-items: center; }
+.full_menu .close_btn a i { color:#809374; font-size: 70px; }
+
+.full_menu .cat { padding: 150px; }
+.full_menu .cat li {  width: 100%; height: 120px; display: flex; justify-content: center; align-items: center;}
+.full_menu .cat li a p { font-family: 'Times New Roman'; font-size: 44px; font-weight: 200; display: block;}
+.full_menu .cat li a:hover p { display: none;}
+.full_menu .cat li a span { display: none; font-size: 30px; font-weight: 800; color: #809374;}
+.full_menu .cat li a:hover span { display: block; font-size: 30px; font-weight: 800; color: #809374;}
+
+
+
+/*-----------------------------------------------------------------------------*/
+/* 1. 메인 */
+/*-----------------------------------------------------------------------------*/
+
+#home { height: 100%; display: flex; justify-content: center;}
+
+/*.list { height: 100%; }*/
+.list ul { display: flex; /*width: 1302px;*/ height: 100%; justify-content: space-between; }
+.list ul li { background: #fff; width: 430px; height: 100%; border-right:1px solid #2a292e; padding: 40px; box-sizing: border-box;}
+.list ul li:nth-child(1):hover { background: url(../images/home01.jpg) no-repeat center;}
+.list ul li:nth-child(2):hover { background: url(../images/home02.jpg) no-repeat center;}
+.list ul li:nth-child(3):hover { background: url(../images/home03.jpg) no-repeat center;}
+.list ul li a { width: 100%; height: 100%; display: block;}
+.list ul li a p { font-family: 'Times New Roman'; font-size: 80px; font-weight: 200; font-style: italic;}
+
+/*바로가기버튼*/
+.list ul li a span { margin-top: 20px; font-family: 'Times New Roman'; width: 60px; height: 60px; border-radius: 100%; background: #2a292e; display: flex; justify-content: center; align-items: center;}
+.list ul li a:hover span {  background: #809374;}
+.list ul li a span i { font-size: 40px; color: #fff;}
+
+
+.contact { width: 620px;}
+.ment { font-family: 'Gsans'; padding: 600px 0 0 40px; }
+.ment h2 { font-family: 'Times New Roman'; font-size: 80px; font-weight: 200; font-style: italic;}
+.ment h2:after { content: ""; width: 80px; height: 6px; background: #809374; display: block;  margin: 10px 0 20px 10px;}
+.ment p { margin-left: 10px; font-size: 24px; font-weight: 500; margin-bottom: 4px;}
+
+
+/*-----------------------------------------------------------------------------*/
+/* 2. 웹사이트 - 메인 */
+/*-----------------------------------------------------------------------------*/
+
+.home_web h1 { width: 150px; height: 130px; display: flex; justify-content: center; align-items: center; margin-left: 50px;}
+.home_web h1 > a { display: blcok; font-family: 'Times New Roman'; font-size: 64px; font-weight: 200; font-style: italic; line-height: 1;}
+.home_web h1:hover > a p { display: none;}
+.home_web h1 > a img { display: none;}
+.home_web h1:hover > a img { display: block;}
+
+
+#ws .wrap { width: 1300px; margin:0 auto;}
+.ws_list ul li { float: left; width: 650px; height: 700px; background: #eee;}
+.ws_list ul li:nth-child(1) { background: url(../images/web06.jpg) no-repeat center;}
+.ws_list ul li:nth-child(2) { background: url(../images/web02.jpg) no-repeat center;}
+.ws_list ul li:nth-child(3) { background: url(../images/web01.jpg) no-repeat center;}
+.ws_list ul li:nth-child(4) { background: url(../images/web05-1.jpg) no-repeat center;}
+.ws_list ul li:nth-child(5) { background: url(../images/web03.jpg) no-repeat center;}
+.ws_list ul li:nth-child(6) { background: url(../images/web04.jpg) no-repeat center;}
+
+.ws_list ul li a { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; text-align: center;}
+.ws_list ul li:hover a { background: rgba(29,155,103,0.6);}
+.ws_list ul li a dl { display: none;}
+.ws_list ul li:hover a dl { display: block; color:#fff; font-size: 18px; font-weight: 600;}
+
+/*-----------------------------------------------------------------------------*/
+/* 2-1. 하이성형외과 */
+/*-----------------------------------------------------------------------------*/
+
+.link_box { width: 360px; height: 94px; border-radius: 4px; background: #fbddd2; position: absolute; top:470px; right:290px; box-sizing: border-box;}
+.link_box a { width: 100%; height: 100%; display: block; display: flex; justify-content: center; align-items: center;} 
+.link_box:hover a { background: #fff; border:2px solid #fbddd2;} 
+.link_box a p { font-size: 18px; font-weight: 800; margin-right: 10px;} 
+
+.prv { width: 1544px; height: 2000px; overflow: auto; position: absolute; top:1480px; left:188px;}
+
+/*-----------------------------------------------------------------------------*/
+/* 2-2. 하이테마파크 */
+/*-----------------------------------------------------------------------------*/
+
+
+.link_box_them { width: 360px; height: 94px; border-radius: 4px; background: #abbec4; position: absolute; top:470px; right:290px; box-sizing: border-box;}
+.link_box_them a { width: 100%; height: 100%; display: block; display: flex; justify-content: center; align-items: center;} 
+.link_box_them:hover a { background: #fff; border:2px solid #abbec4;} 
+.link_box_them a p { font-size: 18px; font-weight: 800; margin-right: 10px;} 
+
+/*-----------------------------------------------------------------------------*/
+/* 2-3. 서산중앙병원 */
+/*-----------------------------------------------------------------------------*/
+
+
+.link_box_seo { width: 360px; height: 94px; border-radius: 4px; background: #013743; position: absolute; top:470px; right:290px; box-sizing: border-box;}
+.link_box_seo a { width: 100%; height: 100%; display: block; display: flex; justify-content: center; align-items: center;} 
+.link_box_seo:hover a { background: #fff; border:2px solid #013743;} 
+.link_box_seo a p { color: #fff; font-size: 18px; font-weight: 800; margin-right: 10px;} 
+.link_box_seo a:hover p { color:inherit; } 
+
+/*-----------------------------------------------------------------------------*/
+/* 2-4. 마인드집 */
+/*-----------------------------------------------------------------------------*/
+
+
+.link_box_mind { display: none;} 
+.prv_mind { display: none;}
+
+
+/*-----------------------------------------------------------------------------*/
+/* 3. 개인작업 - 메인 */
+/*-----------------------------------------------------------------------------*/
+
+
+#ot .wrap { width: 1300px; margin:0 auto;}
+.ot_list ul li { float: left; width: 650px; height: 700px; background: #eee;}
+.ot_list ul li:nth-child(1) { background: url(../images/other01.jpg) no-repeat center;}
+.ot_list ul li:nth-child(2) { background: url(../images/other02.jpg) no-repeat center;}
+.ot_list ul li:nth-child(3) { background: url(../images/other03.jpg) no-repeat center;}
+.ot_list ul li:nth-child(4) { background: url(../images/other04.jpg) no-repeat center;}
+.ot_list ul li:nth-child(5) { background: url(../images/other05.jpg) no-repeat center;}
+.ot_list ul li:nth-child(6) { background: url(../images/other06.jpg) no-repeat center;}
+
+.ot_list ul li a { width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; text-align: center;}
+.ot_list ul li:hover a { background: rgba(29,155,103,0.6);}
+.ot_list ul li a dl { display: none;}
+.ot_list ul li:hover a dl { display: block; color:#fff; font-size: 18px; font-weight: 600;}
+
+
+/*-----------------------------------------------------------------------------*/
+/* 3-1. 네이처오일 */
+/*-----------------------------------------------------------------------------*/
+
+.link_box_oil {display: none;}
+
+/*-----------------------------------------------------------------------------*/
+/* 3-1. 그랜드셀라인 */
+/*-----------------------------------------------------------------------------*/
+
+.link_box_cell {display: none;}
+
+/*-----------------------------------------------------------------------------*/
+/* 3-1. 마이티파워 */
+/*-----------------------------------------------------------------------------*/
+
+.link_box_might {display: none;}
+
+
+/*-----------------------------------------------------------------------------*/
+/* 3-1. 카드뉴스 */
+/*-----------------------------------------------------------------------------*/
+
+.link_box_card {display: none;}
+.prv_card {display: none;}
+
+/*-----------------------------------------------------------------------------*/
+/* 3-1. 포스터 */
+/*-----------------------------------------------------------------------------*/
+
+.link_box_poster {display: none;}
+.prv_poster {display: none;}
+
+
+
+
+
